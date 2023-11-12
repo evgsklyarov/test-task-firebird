@@ -1,0 +1,16 @@
+$screen-small: 576px;
+$screen-medium: 768px;
+$screen-large: 992px;
+$screen-extra-large: 1200px;
+
+@mixin for-size($size) {
+  @if $size == small {
+    @media (min-width: $screen-small) { @content; }
+  } @else if $size == medium {
+    @media (min-width: $screen-medium) { @content; }
+  } @else if $size == large {
+    @media (min-width: $screen-large) { @content; }
+  } @else if $size == extra-large {
+    @media (min-width: $screen-extra-large) { @content; }
+  }
+}

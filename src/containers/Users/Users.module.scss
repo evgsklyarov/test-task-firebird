@@ -1,0 +1,106 @@
+@import 'styles/media.scss';
+@import 'styles/colors.scss';
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px 0;
+
+  input {
+    margin-right: 10px;
+  }
+
+  @include for-size(medium) {
+    width: 60%;
+  }
+}
+
+.users-list {
+  width: 100%;
+
+  &__header {
+    display: none;
+
+    @include for-size(medium) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    padding: 0 10px;
+    width: 30%;
+
+    &_action {
+      width: 10%;
+    }
+  }
+}
+
+.users-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+
+  @include for-size(medium) {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #f3f3f3;
+  }
+
+  &__value {
+    word-break: break-all;
+  }
+
+  &__name,
+  &__username,
+  &__email {
+    display: flex;
+    justify-content: space-between;
+    
+    @include for-size(medium) {
+      padding: 0 10px;
+      width: 30%;
+    }
+  }
+
+  &__action {
+    margin-top: 10px;
+
+    button {
+      width: 100%;
+    }
+    @include for-size(medium) {
+      margin-top: 0;
+      width: 10%;
+    }
+  }
+
+  &_highlight {
+    background-color: $text-highlight;
+  }
+
+  &__title {
+    font-weight: 700;
+
+    @include for-size(medium) {
+      display: none;
+    }
+  }
+}

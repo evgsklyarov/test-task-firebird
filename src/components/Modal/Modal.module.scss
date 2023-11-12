@@ -1,0 +1,33 @@
+@import 'styles/colors.scss';
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: $modal-overlay-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal-window {
+  background-color: $modal-window-bg;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: $text-main;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

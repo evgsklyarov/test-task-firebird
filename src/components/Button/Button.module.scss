@@ -1,0 +1,18 @@
+@import 'styles/colors.scss';
+
+.button {
+  min-width: fit-content;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: $btn-text-primary;
+  cursor: pointer;
+
+  &_primary {
+    background-color: $btn-bg-primary;
+
+    &:hover {
+      background-color: $btn-bg-primary-hover;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import 'styles/colors.scss';
+
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  margin-top: 10px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+}
